@@ -15,6 +15,7 @@ class CreateSubjectsTable extends Migration
     {
         Schema::create('subjects', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->comment('科目名稱');
             $table->timestamps();
         });
     }
